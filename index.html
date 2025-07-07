@@ -22,17 +22,12 @@
 
   <!-- Hero Section -->
   <header class="hero">
-    <h1>Nightbloom</h1>
-    <p class="tagline">Mood by Nature. Ritual by You.</p>
-    <a href="#quiz" class="cta-button">Start Your Ritual</a>
+    <div class="hero-content">
+      <h1>Nightbloom</h1>
+      <p class="tagline">Mood by Nature. Ritual by You.</p>
+      <button class="btn primary" onclick="launchQuiz()">🧪 Take the Mood Quiz</button>
+    </div>
   </header>
-  <section class="hero">
-  <div class="hero-content">
-    <h1>Nightbloom</h1>
-    <p>Mood by nature. Ritual by you.</p>
-    <button class="btn primary" onclick="launchQuiz()">🧪 Take the Mood Quiz</button>
-  </div>
-</section>
 
   <!-- Mood-Based Shop Categories -->
   <section id="shop" class="shop-section">
@@ -61,20 +56,21 @@
     </div>
   </section>
 
-<section class="start-ritual">
-  <h2>Start Your Ritual</h2>
-  <p>Let us help you find your perfect blend — based on your mood, your moment, or your curiosity.</p>
-  <div class="button-row">
-    <button class="btn" onclick="launchQuiz()">🧪 Take the Mood Quiz</button>
-    <button class="btn" onclick="launchChat()">💬 Chat with Herbalist</button>
-  </div>
-</section>
-  
+  <!-- Start Your Ritual Section -->
+  <section class="start-ritual">
+    <h2>Start Your Ritual</h2>
+    <p>Let us help you find your perfect blend — based on your mood, your moment, or your curiosity.</p>
+    <div class="button-row">
+      <button class="btn" onclick="launchQuiz()">🧪 Take the Mood Quiz</button>
+      <button class="btn" onclick="launchChat()">💬 Chat with Herbalist</button>
+    </div>
+  </section>
+
   <!-- Ritual Quiz Callout -->
   <section id="quiz" class="quiz-section">
     <h2>Not Sure Where to Start?</h2>
     <p>Take our Ritual Quiz to match your mood with a custom blend.</p>
-    <a href="#" class="quiz-button">Take the Quiz</a>
+    <button class="quiz-button" onclick="launchQuiz()">Take the Quiz</button>
   </section>
 
   <!-- About Section -->
@@ -97,6 +93,7 @@
   <footer class="footer">
     <p>&copy; 2025 Nightbloom. For botanical use only. Not a tobacco product.</p>
   </footer>
-<script src="script.js"></script>
+
+  <script src="script.js"></script>
 </body>
 </html>
