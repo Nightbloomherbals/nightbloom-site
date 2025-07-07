@@ -174,3 +174,50 @@ footer {
 .start-ritual .btn:hover {
   background: #cbb49a;
 }
+
+.accessories-section {
+  padding: 60px 20px;
+  background: #f9f9f4;
+  text-align: center;
+}
+
+.accessories-section h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  font-family: 'Playfair Display', serif;
+}
+
+.accessories-section p {
+  color: #444;
+  margin-bottom: 30px;
+}
+
+.accessories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.accessory-item {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.accessory-item:hover {
+  transform: translateY(-5px);
+}
+
+.accessory-item h3 {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+.accessory-item p {
+  color: #555;
+  font-size: 0.95em;
+}
