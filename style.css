@@ -384,6 +384,53 @@ footer {
   background: #5d4434;
 }
 
+/* === Product Page Styles === */
+.product-section {
+  padding: 40px 20px;
+  background-color: #fefefe;
+  text-align: center;
+}
+
+.product-section h2 {
+  font-size: 1.8em;
+  margin-bottom: 30px;
+  color: #4b3221;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.product-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  width: 100%;
+  max-width: 300px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-3px);
+}
+
+.product-card h3 {
+  color: #4b3221;
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+
+.product-card p {
+  color: #555;
+  font-size: 0.95em;
+  line-height: 1.4;
+}
+
 /* === Bundles Section === */
 .bundles-section {
   padding: 40px 20px;
