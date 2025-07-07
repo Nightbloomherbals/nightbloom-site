@@ -26,42 +26,43 @@ p {
   margin-bottom: 1.2em;
 }
 
-/* === Navbar === */
+/* === Sticky Navigation === */
 .navbar {
-  background-color: #fff8f0;
-  border-bottom: 1px solid #ddd;
-  padding: 15px 20px;
   position: sticky;
   top: 0;
-  z-index: 1000;
+  background-color: #fffefa;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 1rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  padding: 15px 30px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  z-index: 1000;
 }
 
 .logo {
-  font-size: 1.3rem;
-  font-weight: bold;
-  color: #684d2c;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6em;
+  font-weight: 700;
+  color: #4b3221;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 15px;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
 }
 
-.nav-links a {
+.nav-links li a {
   text-decoration: none;
-  color: #444;
   font-weight: 500;
-  transition: color 0.2s ease-in-out;
+  color: #4b3221;
+  transition: color 0.3s ease;
 }
 
-.nav-links a:hover {
-  color: #a0603c;
+.nav-links li a:hover {
+  color: #8b5e3c;
 }
 
 /* === Sections === */
