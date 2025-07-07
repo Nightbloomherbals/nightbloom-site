@@ -443,26 +443,25 @@ section {
 }
 
 /* === Mobile Responsive === */
-@media (max-width: 600px) {
-  .navbar {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-
+@media (max-width: 480px) {
   .nav-links {
-    flex-direction: row;
-    gap: 20px;
-    padding-top: 0;
+    flex-direction: column;
+    gap: 8px;
   }
 
-  .hero-inner h1 {
-    font-size: 2rem;
+  .nav-links a {
+    font-size: 0.85rem;
+    text-align: center;
   }
 
-  .tagline {
-    font-size: 1rem;
+  .main-nav {
+    padding: 10px 20px;
   }
+
+  .logo-text {
+    font-size: 1.4rem;
+  }
+}
 
   .product-grid,
   .accessory-grid {
