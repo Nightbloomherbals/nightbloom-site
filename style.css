@@ -87,6 +87,45 @@ section {
   background-color: #7c462b;
 }
 
+/* --- Clean centered hero --- */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  text-align: center;
+  background: #f9f8f4;
+}
+.hero-inner {
+  max-width: 600px;
+}
+.hero-inner h1 {
+  font-size: clamp(2.3rem, 6vw, 4rem);
+}
+.tagline {
+  font-size: 1.1rem;
+  color: #5c524c;
+  margin: 12px 0 30px;
+}
+.scroll-down {
+  font-size: 1rem;
+  text-decoration: none;
+  color: #7a5a45;
+  border: 2px solid #7a5a45;
+  padding: 10px 22px;
+  border-radius: 30px;
+  transition: all 0.25s ease;
+}
+.scroll-down:hover {
+  background: #7a5a45;
+  color: #fff;
+}
+
+/* --- Cart link keeps nav tidy --- */
+.cart-link {
+  font-weight: 600;
+}
+
 /* === Mood Tiles === */
 .mood-tile {
   background-color: #fff;
