@@ -20,18 +20,16 @@
   </ul>
 </nav>
 
-
-<!-- Hero -->
+<!-- Hero Section -->
 <header class="hero">
   <div class="hero-inner">
     <h1>Nightbloom</h1>
     <p class="tagline">Mood by Nature. Ritual by You.</p>
-    <!-- gentle scroll cue -->
     <a href="#moods" class="scroll-down">▼ Begin Your Journey</a>
   </div>
 </header>
 
-<!-- Mood-Based Preview Section -->
+<!-- Mood-Based Preview -->
 <section id="moods" class="mood-preview">
   <h2>Explore by Mood</h2>
   <div class="mood-grid">
@@ -58,52 +56,17 @@
   </div>
 </section>
 
-<!-- Gentle Quiz Callout -->
-<section class="quiz-callout">
-  <h2>Not Sure Where to Start?</h2>
-  <p>Let us guide you with a quick quiz to match your mood with the perfect ritual blend.</p>
-  <a href="#quiz" class="quiz-button">🧪 Take the Mood Quiz</a>
-</section>
-
-  <!-- Mood-Based Shop Categories -->
-  <section id="shop" class="shop-section">
-    <h2>Explore by Mood</h2>
-    <div class="mood-grid">
-      <div class="mood-tile">
-        <h3>🌌 Dream</h3>
-        <p>Relaxing blends to wind down.</p>
-        <a href="#">DreamSmoke & DreamSip</a>
-      </div>
-      <div class="mood-tile">
-        <h3>🔥 Focus</h3>
-        <p>Invigorating blends to spark clarity.</p>
-        <a href="#">MindFire & WakeBrew</a>
-      </div>
-      <div class="mood-tile">
-        <h3>💗 Heart</h3>
-        <p>Floral blends for openness and warmth.</p>
-        <a href="#">HeartBloom & SoulSteep</a>
-      </div>
-      <div class="mood-tile">
-        <h3>🌿 Ease</h3>
-        <p>Daily blends for grounding and calm.</p>
-        <a href="#">BaseBloom & DailySip</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Product Grid -->
+<!-- Product Grid -->
 <section id="products" class="product-section">
   <h2>Our Featured Blends</h2>
   <div class="product-grid">
-    
     <div class="product-card">
       <img src="images/dreamsmoke.jpg" alt="DreamSmoke Blend">
       <h3>🌌 DreamSmoke</h3>
       <p class="product-tag">Mood: Sleep & Serenity</p>
       <p>Unwind into deep rest with mullein, lavender, and blue lotus.</p>
       <span class="price">$16</span>
-      <button class="add-to-cart">Add to Cart</button>
+      <button onclick="addToCart('DreamSmoke')" class="add-to-cart">Add to Cart</button>
     </div>
 
     <div class="product-card">
@@ -112,7 +75,7 @@
       <p class="product-tag">Mood: Focus & Energy</p>
       <p>Clarity in every puff — damiana, peppermint, and ginseng.</p>
       <span class="price">$16</span>
-      <button class="add-to-cart">Add to Cart</button>
+      <button onclick="addToCart('MindFire')" class="add-to-cart">Add to Cart</button>
     </div>
 
     <div class="product-card">
@@ -121,7 +84,7 @@
       <p class="product-tag">Mood: Love & Openness</p>
       <p>Floral and grounding: rose, hibiscus, and lemon balm.</p>
       <span class="price">$16</span>
-      <button class="add-to-cart">Add to Cart</button>
+      <button onclick="addToCart('HeartBloom')" class="add-to-cart">Add to Cart</button>
     </div>
 
     <div class="product-card">
@@ -130,53 +93,24 @@
       <p class="product-tag">Mood: Calm & Balance</p>
       <p>Daily ease with chamomile, holy basil, and mullein.</p>
       <span class="price">$16</span>
-      <button class="add-to-cart">Add to Cart</button>
+      <button onclick="addToCart('BaseBloom')" class="add-to-cart">Add to Cart</button>
     </div>
-
   </div>
 </section>
 
-  <!-- Product Page Preview Section -->
-<section id="products" class="product-section">
-  <h2>Shop the Ritual</h2>
-  <div class="product-grid">
-
-    <div class="product-card">
-      <h3>DreamSmoke</h3>
-      <p>Relaxing herbal blend for nighttime rituals.</p>
-    </div>
-
-    <div class="product-card">
-      <h3>DreamSip</h3>
-      <p>Calming tea blend to help you unwind.</p>
-    </div>
-
-    <div class="product-card">
-      <h3>Ceramic Grinder</h3>
-      <p>Floral patterned grinder — a beautiful and functional ritual tool.</p>
-    </div>
-
-    <div class="product-card">
-      <h3>Ritual Kit</h3>
-      <p>Starter bundle with blend, tray, grinder & mini guide.</p>
-    </div>
-
-  </div>
-</section>
-
-  <!-- Featured Bundles -->
+<!-- Featured Bundles -->
 <section id="bundles" class="bundles-section">
   <h2>🌟 Featured Bundles</h2>
   <div class="bundle-grid">
     <div class="bundle-card">
       <h3>🛌 Nightcap Set</h3>
       <p>Wind down with DreamSmoke & DreamSip, crafted for deep relaxation.</p>
-      <button class="btn cart-btn">Add to Cart</button>
+      <button class="btn cart-btn" onclick="addToCart('Nightcap Set')">Add to Cart</button>
     </div>
     <div class="bundle-card">
       <h3>🌞 Morning Clarity</h3>
       <p>Start focused with MindFire & WakeBrew, made for mental clarity.</p>
-      <button class="btn cart-btn">Add to Cart</button>
+      <button class="btn cart-btn" onclick="addToCart('Morning Clarity')">Add to Cart</button>
     </div>
   </div>
 </section>
@@ -189,32 +123,32 @@
     <div class="accessory-tile">
       <h3>🌀 Ceramic Grinder</h3>
       <p>Floral-patterned, durable, and smooth. A perfect grind every time.</p>
-      <button class="btn">Add to Cart</button>
+      <button class="btn" onclick="addToCart('Ceramic Grinder')">Add to Cart</button>
     </div>
     <div class="accessory-tile">
       <h3>🪄 Rolling Tray</h3>
       <p>Elegant and portable—makes any surface a sacred space.</p>
-      <button class="btn">Add to Cart</button>
+      <button class="btn" onclick="addToCart('Rolling Tray')">Add to Cart</button>
     </div>
     <div class="accessory-tile">
       <h3>🔮 Ritual Kit</h3>
       <p>Everything you need to start your ritual. Gift-ready and intention-packed.</p>
-      <button class="btn">Add to Cart</button>
+      <button class="btn" onclick="addToCart('Ritual Kit')">Add to Cart</button>
     </div>
   </div>
 </section>
 
-  <!-- Start Your Ritual Section -->
-  <section class="start-ritual">
-    <h2>Start Your Ritual</h2>
-    <p>Let us help you find your perfect blend — based on your mood, your moment, or your curiosity.</p>
-    <div class="button-row">
-      <button class="btn" onclick="launchQuiz()">🧪 Take the Mood Quiz</button>
-      <button class="btn" onclick="launchChat()">💬 Chat with Herbalist</button>
-    </div>
-  </section>
+<!-- Start Your Ritual Section -->
+<section class="start-ritual">
+  <h2>Start Your Ritual</h2>
+  <p>Let us help you find your perfect blend — based on your mood, your moment, or your curiosity.</p>
+  <div class="button-row">
+    <button class="btn" onclick="launchQuiz()">🧪 Take the Mood Quiz</button>
+    <button class="btn" onclick="launchChat()">💬 Chat with Herbalist</button>
+  </div>
+</section>
 
-  <!-- Featured Mood Blends -->
+<!-- Featured Mood Blends -->
 <section id="featured" class="featured-products">
   <h2>Featured Mood Blends</h2>
   <p>Each blend is crafted with botanicals to match your energy and elevate your ritual.</p>
@@ -245,19 +179,19 @@
     </div>
   </div>
 </section>
-  
-  <!-- Ritual Quiz Callout -->
-  <section id="quiz" class="quiz-section">
-    <h2>Not Sure Where to Start?</h2>
-    <p>Take our Ritual Quiz to match your mood with a custom blend.</p>
-    <button class="quiz-button" onclick="launchQuiz()">Take the Quiz</button>
-  </section>
 
-  <!-- About Section -->
-  <section id="about" class="about-section">
-    <h2>About Nightbloom</h2>
-    <p>Born under the lighthouse in Luna Pier, Nightbloom is a collection of smoke and tea rituals crafted for mood, clarity, and calm. We believe in small batch botanicals, intention-filled evenings, and letting the night bloom in you.</p>
-  </section>
+<!-- Ritual Quiz Callout -->
+<section id="quiz" class="quiz-section">
+  <h2>Not Sure Where to Start?</h2>
+  <p>Take our Ritual Quiz to match your mood with a custom blend.</p>
+  <button class="quiz-button" onclick="launchQuiz()">Take the Quiz</button>
+</section>
+
+<!-- About Section -->
+<section id="about" class="about-section">
+  <h2>About Nightbloom</h2>
+  <p>Born under the lighthouse in Luna Pier, Nightbloom is a collection of smoke and tea rituals crafted for mood, clarity, and calm. We believe in small batch botanicals, intention-filled evenings, and letting the night bloom in you.</p>
+</section>
 
 <!-- Newsletter Signup -->
 <section id="newsletter" class="newsletter-section">
@@ -269,35 +203,12 @@
   </form>
 </section>
 
-  <section id="accessories" class="accessories-section">
-  <h2>Ritual Tools & Accessories</h2>
-  <p>Enhance your Nightbloom ritual with handcrafted tools and curated essentials.</p>
-  <div class="accessories-grid">
-    <div class="accessory-item">
-      <h3>🌀 Ceramic Grinder</h3>
-      <p>Handcrafted with floral patterns. Perfect grind every time.</p>
-    </div>
-    <div class="accessory-item">
-      <h3>🫙 Amber Glass Jar</h3>
-      <p>UV-protective storage to preserve your blends with intention.</p>
-    </div>
-    <div class="accessory-item">
-      <h3>🔥 Ritual Rolling Tray</h3>
-      <p>Botanical designs, high-quality finish. Your sacred prep space.</p>
-    </div>
-    <div class="accessory-item">
-      <h3>💨 Smoke Wand</h3>
-      <p>A unique pipe alternative for dry blends. Elegant & effective.</p>
-    </div>
-  </div>
-</section>
-
 <!-- Footer -->
 <footer class="footer">
   <p>&copy; 2025 Nightbloom. For botanical use only. Not a tobacco product.</p>
   <p>Site by Nightbloom Team ✨</p>
 </footer>
 
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
