@@ -13,6 +13,14 @@ if (navToggleBtn) {
   navToggleBtn.addEventListener("click", toggleMenu);
 }
 
+// Simple placeholder cart count
+let cartCount = 0;
+function addToCart(item) {
+  cartCount += 1;
+  document.getElementById("cart-count").textContent = cartCount;
+  alert(item + " added to cart!");
+}
+
 // === Launch Quiz (Placeholder) ===
 function launchQuiz() {
   alert("Launching your herbal mood quiz… coming soon!");
