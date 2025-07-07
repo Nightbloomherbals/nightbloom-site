@@ -58,44 +58,51 @@ section {
   100% { background-position: 100% 0; }
 }
 
+/* === Nav Bar === */
 .main-nav {
   position: sticky;
   top: 0;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(8px);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgba(255, 255, 255, 0.7); /* light background */
-  backdrop-filter: blur(8px);           /* dreamy soft blur */
-  padding: 12px 30px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 12px 24px;
   z-index: 999;
+  flex-wrap: wrap;
 }
 
 .logo-text {
   font-family: 'Playfair Display', serif;
   font-size: 1.8rem;
-  font-weight: 600;
   color: #2e4b3d;
-  letter-spacing: 1px;
+  font-weight: 600;
+  margin-right: 20px;
+  white-space: nowrap;
 }
 
 .nav-links {
-  list-style: none;
   display: flex;
-  gap: 18px;
-  padding: 0;
-  margin: 0;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8px;
+  width: 100%;
 }
 
 .nav-links a {
-  color: #ffffffcc;
   text-decoration: none;
+  color: #2e4b3d;
   font-size: 0.95rem;
-  transition: color 0.3s;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: background 0.2s;
+  white-space: nowrap;
 }
 
 .nav-links a:hover {
-  color: #fff;
+  background: #2e4b3d10;
 }
 
 /* === Hero Section Styling === */
@@ -479,22 +486,20 @@ section {
 }
 
 /* === Mobile Responsive === */
-@media (max-width: 480px) {
-  .nav-links {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 12px;
-  }
-
-  .nav-links a {
-    font-size: 0.85rem;
-    white-space: nowrap;
-    padding: 4px 6px;
+@media (max-width: 768px) {
+  .main-nav {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
   .logo-text {
-    font-size: 1.3rem;
+    margin-bottom: 8px;
+  }
+
+  .nav-links {
+    justify-content: center;
+    width: 100%;
   }
 }
 
