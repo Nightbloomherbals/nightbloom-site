@@ -430,34 +430,6 @@ footer {
   background: #614534;
 }
 
-<!-- Product Page Preview Section -->
-<section id="products" class="product-section">
-  <h2>Shop the Ritual</h2>
-  <div class="product-grid">
-
-    <div class="product-card">
-      <h3>DreamSmoke</h3>
-      <p>Relaxing herbal blend for nighttime rituals.</p>
-    </div>
-
-    <div class="product-card">
-      <h3>DreamSip</h3>
-      <p>Calming tea blend to help you unwind.</p>
-    </div>
-
-    <div class="product-card">
-      <h3>Ceramic Grinder</h3>
-      <p>Floral patterned grinder — a beautiful and functional ritual tool.</p>
-    </div>
-
-    <div class="product-card">
-      <h3>Ritual Kit</h3>
-      <p>Starter bundle with blend, tray, grinder & mini guide.</p>
-    </div>
-
-  </div>
-</section>
-
 /* === Accessories Section === */
 .accessories-section {
   padding: 50px 20px;
