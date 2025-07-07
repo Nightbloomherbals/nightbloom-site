@@ -105,9 +105,8 @@ section {
   justify-content: center;
   text-align: center;
   height: 75vh;
-  padding: 40px 20px;
+  padding: 40px 5vw;
   background: radial-gradient(circle at center, #fefaf5 0%, #eae6df 100%);
-  position: relative;
 }
 
 .hero-content {
@@ -479,5 +478,25 @@ section {
   .button-row {
     flex-direction: column;
     gap: 12px;
+  }
+}
+
+.hero-logo {
+  max-width: 320px;
+  width: 80%;
+  height: auto;
+  margin-bottom: 20px;
+  animation: floatIn 2.5s ease-out forwards;
+  opacity: 0;
+}
+
+@keyframes floatIn {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
