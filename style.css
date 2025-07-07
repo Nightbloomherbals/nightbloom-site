@@ -445,21 +445,20 @@ section {
 /* === Mobile Responsive === */
 @media (max-width: 480px) {
   .nav-links {
-    flex-direction: column;
-    gap: 8px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
   }
 
   .nav-links a {
     font-size: 0.85rem;
-    text-align: center;
-  }
-
-  .main-nav {
-    padding: 10px 20px;
+    white-space: nowrap;
+    padding: 4px 6px;
   }
 
   .logo-text {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
 }
 
