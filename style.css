@@ -11,6 +11,8 @@ body {
   color: #222;
   line-height: 1.6;
   font-size: 17px;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 h1, h2, h3 {
@@ -22,6 +24,13 @@ h1, h2, h3 {
 
 p {
   margin-bottom: 1.2em;
+}
+
+section {
+  padding: 50px 20px;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
 }
 
 /* === Sticky Navigation === */
@@ -63,27 +72,15 @@ p {
   color: #8b5e3c;
 }
 
-/* Mobile Navigation */
-@media (max-width: 600px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .nav-links {
-    flex-direction: column;
-    gap: 10px;
-  }
-}
-
 /* === Hero Section === */
 .hero {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 80vh;
+  min-height: 70vh;
   text-align: center;
   background: #f9f8f4;
+  padding: 40px 20px;
 }
 
 .hero-inner {
@@ -115,50 +112,9 @@ p {
   color: #fff;
 }
 
-/* === Button Styles === */
-.btn {
-  display: inline-block;
-  background-color: #a0603c;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-  background-color: #7c462b;
-}
-
-.hero .btn.primary {
-  margin-top: 20px;
-  font-size: 1.1em;
-  background-color: #6a4f4b;
-  color: #fff;
-  border: none;
-  padding: 12px 24px;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.hero .btn.primary:hover {
-  background-color: #543b38;
-}
-
-/* === Section Defaults === */
-section {
-  padding: 40px 20px;
-  max-width: 900px;
-  margin: auto;
-}
-
 /* === Mood Preview Section === */
 .mood-preview {
-  padding: 60px 20px;
   background: #fff;
-  text-align: center;
 }
 
 .mood-preview h2 {
@@ -199,54 +155,33 @@ section {
   color: #6b4f3b;
 }
 
-/* === Quiz Callout Section === */
-.quiz-callout {
-  background: #fbf9f7;
-  text-align: center;
-  padding: 60px 20px;
-}
-
-.quiz-callout h2 {
-  font-size: 1.6rem;
-}
-
-.quiz-callout p {
-  font-size: 1rem;
-  color: #5c524c;
-  margin: 12px 0 20px;
-}
-
+/* === Reusable Button === */
+.btn,
+.cart-btn,
 .quiz-button {
-  background: #7a5a45;
+  display: inline-block;
+  background-color: #a0603c;
   color: white;
-  padding: 12px 22px;
-  border-radius: 30px;
+  padding: 10px 20px;
+  border-radius: 6px;
   font-weight: bold;
   text-decoration: none;
-  transition: background 0.25s ease;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
 }
 
+.btn:hover,
+.cart-btn:hover,
 .quiz-button:hover {
-  background: #5d4434;
+  background-color: #7c462b;
 }
 
-/* === Featured Products Section === */
-.featured-products {
-  padding: 60px 20px;
-  background-color: #fefefe;
-  text-align: center;
-}
-
+/* === Product Grid === */
+.product-section h2,
 .featured-products h2 {
   font-size: 2em;
-  margin-bottom: 10px;
-}
-
-.featured-products p {
-  max-width: 500px;
-  margin: 0 auto 40px;
-  font-size: 1em;
-  color: #444;
+  margin-bottom: 20px;
 }
 
 .product-grid {
@@ -281,6 +216,11 @@ section {
   color: #555;
 }
 
+.product-tag {
+  font-weight: bold;
+  color: #7a5a45;
+}
+
 .badge {
   display: inline-block;
   background-color: #ddd;
@@ -305,9 +245,7 @@ section {
 
 /* === Bundles Section === */
 .bundles-section {
-  padding: 40px 20px;
   background: #fdfdfc;
-  text-align: center;
 }
 
 .bundle-grid {
@@ -336,25 +274,9 @@ section {
   color: #555;
 }
 
-.cart-btn {
-  background: #4b3221;
-  color: white;
-  border: none;
-  padding: 10px 16px;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 0.9em;
-}
-
-.cart-btn:hover {
-  background: #614534;
-}
-
 /* === Accessories Section === */
 .accessories-section {
-  padding: 50px 20px;
   background-color: #faf9f6;
-  text-align: center;
 }
 
 .accessories-section h2 {
@@ -396,20 +318,40 @@ section {
   margin-bottom: 15px;
 }
 
-.accessory-tile .btn {
-  background-color: #4b3221;
-  color: white;
-  border: none;
-  padding: 10px 16px;
-  border-radius: 6px;
-  cursor: pointer;
+/* === Start Your Ritual Section === */
+.start-ritual h2 {
+  font-size: 1.8em;
+  margin-bottom: 12px;
+}
+
+.start-ritual p {
+  max-width: 600px;
+  margin: 0 auto 24px;
+  color: #555;
+}
+
+.button-row {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* === About Section === */
+.about-section {
+  background-color: #fffefa;
+}
+
+.about-section p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1em;
+  color: #4b3221;
 }
 
 /* === Newsletter Section === */
 .newsletter-section {
-  padding: 50px 20px;
   background-color: #fffefa;
-  text-align: center;
 }
 
 .newsletter-section h2 {
@@ -462,17 +404,17 @@ section {
   color: #777;
 }
 
-/* === Responsive Nav for Mobile === */
+/* === Mobile Responsive === */
 @media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   .nav-links {
     flex-direction: column;
     gap: 12px;
     padding-top: 10px;
-  }
-
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
   }
 
   .hero-inner h1 {
@@ -495,5 +437,10 @@ section {
 
   .mood-grid {
     grid-template-columns: 1fr;
+  }
+
+  .button-row {
+    flex-direction: column;
+    gap: 12px;
   }
 }
