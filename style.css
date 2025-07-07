@@ -129,3 +129,48 @@ footer {
     align-items: flex-start;
   }
 }
+
+.hero .btn.primary {
+  margin-top: 20px;
+  font-size: 1.1em;
+  background-color: #6a4f4b;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.hero .btn.primary:hover {
+  background-color: #543b38;
+}
+
+.start-ritual {
+  padding: 60px 20px;
+  background: #f3f0ea;
+  text-align: center;
+}
+
+.start-ritual .button-row {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.start-ritual .btn {
+  background: #d9cab3;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.start-ritual .btn:hover {
+  background: #cbb49a;
+}
