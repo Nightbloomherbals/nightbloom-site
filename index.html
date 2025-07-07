@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Nightbloom – Mood by Nature. Ritual by You.</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -25,6 +26,13 @@
     <p class="tagline">Mood by Nature. Ritual by You.</p>
     <a href="#quiz" class="cta-button">Start Your Ritual</a>
   </header>
+  <section class="hero">
+  <div class="hero-content">
+    <h1>Nightbloom</h1>
+    <p>Mood by nature. Ritual by you.</p>
+    <button class="btn primary" onclick="launchQuiz()">🧪 Take the Mood Quiz</button>
+  </div>
+</section>
 
   <!-- Mood-Based Shop Categories -->
   <section id="shop" class="shop-section">
@@ -53,6 +61,15 @@
     </div>
   </section>
 
+<section class="start-ritual">
+  <h2>Start Your Ritual</h2>
+  <p>Let us help you find your perfect blend — based on your mood, your moment, or your curiosity.</p>
+  <div class="button-row">
+    <button class="btn" onclick="launchQuiz()">🧪 Take the Mood Quiz</button>
+    <button class="btn" onclick="launchChat()">💬 Chat with Herbalist</button>
+  </div>
+</section>
+  
   <!-- Ritual Quiz Callout -->
   <section id="quiz" class="quiz-section">
     <h2>Not Sure Where to Start?</h2>
@@ -80,6 +97,6 @@
   <footer class="footer">
     <p>&copy; 2025 Nightbloom. For botanical use only. Not a tobacco product.</p>
   </footer>
-
+<script src="script.js"></script>
 </body>
 </html>
