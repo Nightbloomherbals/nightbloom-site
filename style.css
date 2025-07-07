@@ -100,6 +100,7 @@ section {
 }
 
 /* === Hero Section (Responsive Image Banner) === */
+/* === Hero Section (Responsive Image Banner) === */
 .hero-section {
   display: flex;
   align-items: center;
@@ -129,6 +130,7 @@ section {
     padding: 30px 10px;
   }
 }
+
 /* === Scroll Button === */
 .scroll-button {
   display: inline-block;
