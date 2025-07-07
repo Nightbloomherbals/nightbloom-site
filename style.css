@@ -382,3 +382,49 @@ footer {
 .quiz-button:hover {
   background: #5d4434;
 }
+
+/* === Bundles Section === */
+.bundles-section {
+  padding: 40px 20px;
+  background: #fdfdfc;
+  text-align: center;
+}
+
+.bundle-grid {
+  display: grid;
+  gap: 20px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.bundle-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.bundle-card h3 {
+  color: #4b3221;
+  margin-bottom: 10px;
+}
+
+.bundle-card p {
+  margin-bottom: 15px;
+  font-size: 0.95em;
+}
+
+.cart-btn {
+  background: #4b3221;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+.cart-btn:hover {
+  background: #614534;
+}
