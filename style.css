@@ -316,3 +316,69 @@ footer {
 .product-card a:hover {
   text-decoration: underline;
 }
+
+/* --- Mood Grid --- */
+.mood-preview {
+  padding: 60px 20px;
+  background: #fff;
+  text-align: center;
+}
+.mood-preview h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+.mood-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.mood-tile {
+  background: #f6f5f2;
+  border-radius: 12px;
+  padding: 25px 20px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);
+}
+.mood-tile h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+.mood-tile p {
+  font-size: 0.95rem;
+  color: #5c524c;
+}
+.mood-tile a {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: underline;
+  font-weight: 600;
+  color: #6b4f3b;
+}
+
+/* --- Quiz Callout --- */
+.quiz-callout {
+  background: #fbf9f7;
+  text-align: center;
+  padding: 60px 20px;
+}
+.quiz-callout h2 {
+  font-size: 1.6rem;
+}
+.quiz-callout p {
+  font-size: 1rem;
+  color: #5c524c;
+  margin: 12px 0 20px;
+}
+.quiz-button {
+  background: #7a5a45;
+  color: white;
+  padding: 12px 22px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.25s ease;
+}
+.quiz-button:hover {
+  background: #5d4434;
+}
