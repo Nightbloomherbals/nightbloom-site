@@ -99,36 +99,36 @@ section {
   text-shadow: 0 1px 2px rgba(0,0,0,0.2);
 }
 
-/* === Hero Section Styling === */
+/* === Hero Section (Responsive Image Banner) === */
 .hero-section {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   text-align: center;
-  height: 75vh;
-  padding: 40px 5vw;
-  background: radial-gradient(circle at center, #fefaf5 0%, #eae6df 100%);
+  padding: 40px 20px;
+  background: #fdfaf6;
+  height: auto;
 }
 
-.hero-content {
-  z-index: 1;
-  max-width: 600px;
+.hero-logo {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 20px;
 }
 
-.brand-name {
-  font-family: 'Playfair Display', serif;
-  font-size: 3rem;
-  color: #2e4b3d;
-  margin-bottom: 10px;
-  letter-spacing: 1px;
-}
+@media (max-width: 768px) {
+  .hero-logo {
+    max-width: 280px;
+    margin-bottom: 15px;
+  }
 
-.tagline {
-  font-size: 1.1rem;
-  color: #5b5b5b;
-  margin-bottom: 30px;
+  .hero-section {
+    padding: 30px 10px;
+  }
 }
-
 /* === Scroll Button === */
 .scroll-button {
   display: inline-block;
