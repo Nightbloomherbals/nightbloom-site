@@ -494,14 +494,21 @@ section {
   }
 
   .logo-text {
-    margin-bottom: 8px;
+    margin-bottom: 10px;
   }
 
   .nav-links {
+    flex-wrap: wrap;
     justify-content: center;
-    width: 100%;
+    gap: 12px;
+  }
+
+  .nav-links a {
+    font-size: 0.9rem;
   }
 }
+
+
 
   .product-grid,
   .accessory-grid {
